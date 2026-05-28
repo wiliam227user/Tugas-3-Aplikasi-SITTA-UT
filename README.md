@@ -1,43 +1,43 @@
-# Tugas-3-Aplikasi-SITTA-UT
-# Sistem Bahan Ajar SITTA - Universitas Terbuka
+# Task-3-SITTA-UT-Application
+# SITTA Teaching Materials System - Universitas Terbuka
 
-Aplikasi web *Single Page Application* (SPA) sederhana untuk manajemen stok, tracking *Delivery Order* (DO), dan pembuatan pesanan bahan ajar mahasiswa Universitas Terbuka.
+A simple *Single Page Application* (SPA) web application for stock management, Delivery Order (DO) tracking, and creating teaching material orders for Universitas Terbuka students.
 
-Aplikasi ini dibangun menggunakan Vue.js 2 (via CDN) dengan arsitektur berbasis komponen *(Component-Based Architecture)* tanpa *build tools* (Node.js/Webpack), sehingga sangat ringan dan mudah dipelajari.
+This application is built using Vue.js 2 (via CDN) with a *Component-Based Architecture* without build tools (Node.js/Webpack), making it very lightweight and easy to learn.
 
-## 🚀 Fitur Utama
+## 🚀 Main Features
 
-1. **📦 Stok Bahan Ajar (CRUD & Filter)**
-   - Menampilkan daftar bahan ajar.
-   - Filter berdasarkan UT-Daerah dan Kategori.
-   - Fitur *Sorting* (Urutkan) berdasarkan Judul, Harga, dan Qty.
-   - Indikator Visual (Badge) untuk status stok (Aman, Menipis, Kosong) dengan fitur *Hover Tooltip*.
-   - Form Tambah/Edit/Hapus data stok.
+1. **📦 Teaching Materials Stock (CRUD & Filter)**
+   - Displays the list of teaching materials.
+   - Filter by UT-Region and Category.
+   - *Sorting* feature by Title, Price, and Qty.
+   - Visual Indicators (Badges) for stock status (Safe, Low, Empty) with a *Hover Tooltip* feature.
+   - Add/Edit/Delete stock data forms.
 
-2. **🚚 Tracking DO**
-   - Pencarian status pengiriman menggunakan Nomor DO atau NIM Mahasiswa.
-   - Menampilkan riwayat perjalanan pengiriman (Tracking history).
+2. **🚚 DO Tracking**
+   - Search delivery status using the DO Number or Student ID (NIM).
+   - Displays the delivery journey history (Tracking history).
 
-3. **📝 Buat Pesanan Baru**
-   - Form pembuatan Delivery Order baru.
-   - *Auto-generate* Nomor DO berdasarkan tahun dan urutan.
-   - Perhitungan total harga otomatis berdasarkan paket yang dipilih.
-   - Data otomatis masuk ke dalam sistem Tracking setelah di-submit.
+3. **📝 Create New Order**
+   - Form for creating a new Delivery Order.
+   - *Auto-generate* DO Number based on the current year and sequence.
+   - Automatic total price calculation based on the selected package.
+   - Data is automatically integrated into the Tracking system after submission.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
-- **HTML5 & CSS3** (Custom styling, tanpa framework CSS eksternal)
+- **HTML5 & CSS3** (Custom styling, no external CSS framework)
 - **JavaScript (ES6)**
-- **Vue.js v2** (Didatangkan melalui CDN)
-- **Fetch API** (Untuk simulasi pemanggilan data dari Mock JSON lokal)
+- **Vue.js v2** (Imported via CDN)
+- **Fetch API** (For simulating data fetching from a local Mock JSON)
 
-## 📂 Struktur Direktori
+## 📂 Directory Structure
 
 ```text
 ├── assets/
-│   └── css/style.css            # Styling aplikasi
+│   └── css/style.css            # Application styling
 ├── data/
-│   └── dataBahanAjar.json       # Mocking Data API (Database statis)
+│   └── dataBahanAjar.json       # Mocking Data API (Static database)
 ├── js/
 │   ├── components/              # Vue Components
 │   │   ├── do-tracking.js
@@ -49,25 +49,19 @@ Aplikasi ini dibangun menggunakan Vue.js 2 (via CDN) dengan arsitektur berbasis 
 │   └── app.js                   # Main Vue Instance & Filters
 └── index.html                   # Entry point
 ```
-
-Aplikasi web *Single Page Application* (SPA) sederhana untuk manajemen stok, tracking *Delivery Order* (DO), dan pembuatan pesanan bahan ajar mahasiswa Universitas Terbuka.
-
-## ⚙️ Cara Menjalankan Aplikasi
-
-Karena aplikasi ini menggunakan `fetch()` untuk mengambil file `dataBahanAjar.json` lokal, aplikasi tidak bisa dijalankan hanya dengan klik ganda pada `index.html` karena akan diblokir oleh kebijakan *CORS*. Anda harus menjalankannya menggunakan **Local Web Server**.
-
-**Opsi 1: Menggunakan VS Code (Rekomendasi)**
-1. Buka folder project ini di Visual Studio Code.
-2. Install ekstensi **Live Server**.
-3. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"**.
-4. Browser akan otomatis terbuka di `http://127.0.0.1:5500`.
-
-**Opsi 2: Menggunakan Python**
-Jika Anda sudah menginstal Python, buka terminal/CMD di dalam folder project ini dan jalankan:
-`python -m http.server 8000`
-
-**Opsi 3: Menggunakan Node.js**
-`npx http-server`
-
-## 👨‍💻 Penulis
-Dikembangkan oleh Ignatius Wilhelmus Kim Kerans untuk keperluan Tugas Pemrogaman Berbasis Web / Proyek Universitas Terbuka.
+⚙️ How to Run the Application
+Because this application uses fetch() to retrieve the local dataBahanAjar.json file, it cannot be run by simply double-clicking on the index.html file as it will be blocked by the browser's CORS (Cross-Origin Resource Sharing) policies. You must run it using a Local Web Server.
+Option 1: Using VS Code (Recommended)
+Open this project folder in Visual Studio Code.
+Install the Live Server extension.
+Right-click on the index.html file and select "Open with Live Server".
+The browser will automatically open at http://127.0.0.1:5500.
+Option 2: Using Python
+If you already have Python installed on your computer, open the terminal/CMD inside this project folder and run:
+python -m http.server 8000
+Then open your browser at http://localhost:8000
+Option 3: Using Node.js
+Open the terminal/CMD inside this project folder and run:
+npx http-server
+👨‍💻 Author
+Developed by Ignatius Wilhelmus Kim Kerans for a Web-Based Programming Assignment / Project at Universitas Terbuka.
