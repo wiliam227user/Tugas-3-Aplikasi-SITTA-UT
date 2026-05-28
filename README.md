@@ -49,27 +49,24 @@ This application is built using Vue.js 2 (via CDN) with a *Component-Based Archi
 │   └── app.js                   # Main Vue Instance & Filters
 └── index.html                   # Entry point
 ```
-⚙️ How to Run the Application
-Because this application uses fetch() to retrieve the local dataBahanAjar.json file, it cannot be run by simply double-clicking on the index.html file as it will be blocked by the browser's CORS (Cross-Origin Resource Sharing) policies. You must run it using a Local Web Server.
+## ⚙️ How to Run the Application
 
-Option 1: Using VS Code (Recommended)
+Because this application uses `fetch()` to retrieve the local `dataBahanAjar.json` file, it cannot be run by simply double-clicking on the `index.html` file as it will be blocked by the browser's CORS (Cross-Origin Resource Sharing) policies. You must run it using a Local Web Server.
 
-1.Open this project folder in Visual Studio Code.
-2.Install the Live Server extension.
-3.Right-click on the index.html file and select "Open with Live Server".
-4.The browser will automatically open at http://127.0.0.1:5500.
+**Option 1: Using VS Code (Recommended)**
+1. Open this project folder in Visual Studio Code.
+2. Install the extension **Live Server** extension.
+3. Right-click on the `index.html` file and select **"Open with Live Server"**.
+4. The browser will automatically open at `http://127.0.0.1:5500`.
 
-Option 2: Using Python
-
+**Option 2: Using Python**
 If you already have Python installed on your computer, open the terminal/CMD inside this project folder and run:
-python -m http.server 8000
-Then open your browser at http://localhost:8000
+`python -m http.server 8000`
+Then open your browser at `http://localhost:8000`
 
-Option 3: Using Node.js
-
+**Option 3: Using Node.js**
 Open the terminal/CMD inside this project folder and run:
-npx http-server
+`npx http-server`
 
-
-👨‍💻 Author
+## 👨‍💻 Author
 Developed by Ignatius Wilhelmus Kim Kerans for a Web-Based Programming Assignment / Project at Universitas Terbuka.
