@@ -70,4 +70,4 @@ Jika Anda sudah menginstal Python, buka terminal/CMD di dalam folder project ini
 `npx http-server`
 
 ## 👨‍💻 Penulis
-Dikembangkan oleh Wilia untuk keperluan Tugas / Proyek Universitas Terbuka.
+Dikembangkan oleh Ignatius Wilhelmus Kim Kerans untuk keperluan Tugas Pemrogaman Berbasis Web / Proyek Universitas Terbuka.
