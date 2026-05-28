@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; }
+nav { background-color: #003366; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+nav button { background-color: transparent; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; }
+nav button.active { background-color: #00509e; font-weight: bold; border-radius: 4px; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background-color: #f2f2f2; cursor: pointer; }
+.badge-safe { color: green; font-weight: bold; }
+.badge-warning { color: orange; font-weight: bold; }
+.badge-danger { color: red; font-weight: bold; }
+.tooltip-container { position: relative; display: inline-block; cursor: pointer; }
+.tooltip-box { position: absolute; bottom: 120%; left: 50%; transform: translateX(-50%); background-color: #333; color: #fff; padding: 5px 10px; border-radius: 5px; font-size: 12px; white-space: nowrap; z-index: 10; }
+.filter-box, .form-box { background: white; padding: 15px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+input, select { padding: 8px; margin: 5px 0; border: 1px solid #ccc; border-radius: 4px; }
+button.btn-primary { background-color: #28a745; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 4px; }
+button.btn-danger { background-color: #dc3545; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 4px; }
