@@ -51,17 +51,25 @@ This application is built using Vue.js 2 (via CDN) with a *Component-Based Archi
 ```
 ⚙️ How to Run the Application
 Because this application uses fetch() to retrieve the local dataBahanAjar.json file, it cannot be run by simply double-clicking on the index.html file as it will be blocked by the browser's CORS (Cross-Origin Resource Sharing) policies. You must run it using a Local Web Server.
+
 Option 1: Using VS Code (Recommended)
-Open this project folder in Visual Studio Code.
-Install the Live Server extension.
-Right-click on the index.html file and select "Open with Live Server".
-The browser will automatically open at http://127.0.0.1:5500.
+
+1.Open this project folder in Visual Studio Code.
+2.Install the Live Server extension.
+3.Right-click on the index.html file and select "Open with Live Server".
+4.The browser will automatically open at http://127.0.0.1:5500.
+
 Option 2: Using Python
+
 If you already have Python installed on your computer, open the terminal/CMD inside this project folder and run:
 python -m http.server 8000
 Then open your browser at http://localhost:8000
+
 Option 3: Using Node.js
+
 Open the terminal/CMD inside this project folder and run:
 npx http-server
+
+
 👨‍💻 Author
 Developed by Ignatius Wilhelmus Kim Kerans for a Web-Based Programming Assignment / Project at Universitas Terbuka.
