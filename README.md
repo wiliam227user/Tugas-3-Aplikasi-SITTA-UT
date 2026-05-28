@@ -48,3 +48,26 @@ Aplikasi ini dibangun menggunakan Vue.js 2 (via CDN) dengan arsitektur berbasis 
 │   │   └── api.js               # Service API Fetcher
 │   └── app.js                   # Main Vue Instance & Filters
 └── index.html                   # Entry point
+```
+
+Aplikasi web *Single Page Application* (SPA) sederhana untuk manajemen stok, tracking *Delivery Order* (DO), dan pembuatan pesanan bahan ajar mahasiswa Universitas Terbuka.
+
+## ⚙️ Cara Menjalankan Aplikasi
+
+Karena aplikasi ini menggunakan `fetch()` untuk mengambil file `dataBahanAjar.json` lokal, aplikasi tidak bisa dijalankan hanya dengan klik ganda pada `index.html` karena akan diblokir oleh kebijakan *CORS*. Anda harus menjalankannya menggunakan **Local Web Server**.
+
+**Opsi 1: Menggunakan VS Code (Rekomendasi)**
+1. Buka folder project ini di Visual Studio Code.
+2. Install ekstensi **Live Server**.
+3. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"**.
+4. Browser akan otomatis terbuka di `http://127.0.0.1:5500`.
+
+**Opsi 2: Menggunakan Python**
+Jika Anda sudah menginstal Python, buka terminal/CMD di dalam folder project ini dan jalankan:
+`python -m http.server 8000`
+
+**Opsi 3: Menggunakan Node.js**
+`npx http-server`
+
+## 👨‍💻 Penulis
+Dikembangkan oleh Wilia untuk keperluan Tugas / Proyek Universitas Terbuka.
